@@ -17,10 +17,10 @@ jobs:
         run: npm run build
 
       - name: Remove Previous Deploy Folder
-        run: rm -rf /var/www/fitnest.ir/html/
+        run: rm -rf /var/www/fitnest.ir/
 
       - name: Create Deploy Folder
-        run: mkdir -p /var/www/fitnest.ir/html/
+        run: mkdir -p /var/www/fitnest.ir/
 
       - name: Move Built Files to Deploy Folder
-        run: mv dist/* /var/www/fitnest.ir/html/
+        run: mv dist/* /var/www/fitnest.ir/
